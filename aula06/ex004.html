@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            font: normal 20px arial;
+        }
+    </style>
 </head>
 <body>
     <script>
         var nome = window.prompt('Digite seu nome')
-        document.write(`Seu nome tem ${s`)
+        document.writeln(`A quantidade de letras que tem seu nome é ${nome.length} </br>`)
+        document.writeln(`Seu nome em MAIUSCULA é ${nome.toLocaleUpperCase()} </br>`)
+        document.writeln(`Seu nome em MAINUSCULA é ${nome.toLowerCase()}`)
     </script>
 </body>
 </html>
