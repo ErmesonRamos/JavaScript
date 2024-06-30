@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somar</title>
+</head>
+<body>
+    <h1>Somar</h1>
+    <input type="number" name="num1" id="num1">
+    <p style="display: inline;">+</p>
+    <input type="number" name="num2" id="num2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">
+        Resultado:
+    </div>
+
+
+
+    <script>
+        function somar(){
+            var valor1 = window.document.getElementById('num1')
+            var valor2 = window.document.getElementById('num2')
+            var resposta = window.document.getElementById('res')
+            var num1 = Number(valor1.value)
+            var num2 = Number(valor2.value)
+            var resultado = num1 + num2
+            resposta.innerText = `Resultado: ${resultado}`
+
+        }
+    </script>
+</body>
+</html>
