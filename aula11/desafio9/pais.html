@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Nacionalidade</title>
+</head>
+<body>
+    <h1>PAÍS</h1>    
+    Digite o nome do seu país <input type="text" id="nome_pais">
+    <input type="button" value="Enviar" onclick="teste_nacionalidade()">
+    <div id="result"></div>
+
+    <script>
+        function teste_nacionalidade() {
+            var nome_pais = window.document.getElementById('nome_pais')
+            var resultado = window.document.getElementById('result')
+            if (nome_pais.value == 'Brasil') {
+                resultado.innerHTML = '<p>Voçê é <strong>BRASILEIRO</strong>!</p>'
+            }else{
+                resultado.innerHTML = '<p>Voçê é <strong>ESTRANGEIRO</strong>!</p>'
+            }
+            
+        }
+    </script>
+</body>
+</html>
